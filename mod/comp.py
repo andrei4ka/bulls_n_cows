@@ -34,10 +34,7 @@ class Guesser(object):
         :return: Generated maximum number
         :rtype: int
         """
-        max_num = '1'
-        for zerocount in range(self.guess_len):
-            max_num += '0'
-        return int(max_num)
+        return 10 ** self.guess_len
 
     @property
     def possible_variants(self):
